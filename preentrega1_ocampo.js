@@ -1,4 +1,18 @@
+let resultado = 0; 
+
+function sumar(v1, v2) {
+    return v1 + v2;
+}
+
+let v1 = parseInt(prompt("Cuantos dedos tiene su hijo en la MANO DERECHA:"));
+let v2 = parseInt(prompt("Cuantos dedos tiene su hijo en la MANO IZQUIERDA:"));
+
+let suma = sumar(v1, v2); 
+alert("¡Felicitaciones! Su hijo tiene " + suma + " dedos! No es un Marciano :). Ahora si, prosigamos.");
+
+
 const edad = parseInt(prompt("Ingrese la edad de su hijo"));
+
 let menorEdad;
 
 if (edad <= 4) {
@@ -16,7 +30,7 @@ if (menorEdad) {
             alert("Se encuentra dentro de los parámetros normales");
         } else {
             alert("Los valores no son normales. Se le aconseja consultar con el pediatra. A continuación podrá sacar turno.");  
-        }
+        } 
     } else {
         alert("Prosiga a ingresar los datos que se le pedirán");
     }
@@ -65,8 +79,7 @@ if (menorEdad) {
 
         if (peso == 16 && altura == 100) {
             alert("Se encuentra dentro de los parámetros normales");
-        } 
-        else {
+        } else {
             alert("Los valores no son normales. Se le aconseja consultar con el pediatra. A continuación podrá sacar turno.");  
         }
     } else {
